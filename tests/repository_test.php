@@ -90,6 +90,8 @@ final class repository_test extends \advanced_testcase {
     public function test_returntype_and_listing(): void {
         $repo = $this->get_repository();
         $this->assertSame(FILE_EXTERNAL, $repo->supported_returntypes());
-        $this->assertSame([], $repo->get_listing()['list']);
+        $listing = $repo->get_listing();
+        $this->assertSame([], $listing['list']);
+        $this->assertNotEmpty($listing['message']);
     }
 }

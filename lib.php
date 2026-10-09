@@ -50,6 +50,7 @@ class repository_eduplay extends repository {
     public function get_listing($path = '', $page = '') {
         return [
             'list' => [],
+            'message' => get_string('searchhint', 'repository_eduplay'),
             'nologin' => true,
             'norefresh' => true,
             'nosearch' => false,
@@ -75,6 +76,7 @@ class repository_eduplay extends repository {
         }
         return [
             'list' => $list,
+            'message' => get_string('searchhint', 'repository_eduplay'),
             'nologin' => true,
             'norefresh' => true,
             'nosearch' => false,

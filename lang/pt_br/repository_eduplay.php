@@ -28,4 +28,5 @@ $string['configplugin'] = 'Configuração do repositório EduPlay';
 $string['eduplay:view'] = 'Ver o repositório EduPlay';
 $string['pluginname'] = 'EduPlay';
 $string['privacy:metadata'] = 'O plugin de repositório do EduPlay não armazena dados pessoais e não envia nada ao EduPlay.';
+$string['searchhint'] = 'Cole o link completo do vídeo (https://eduplay.rnp.br/app/video/número) na caixa de busca. A busca por título não está disponível.';
 $string['videotitle'] = 'Vídeo EduPlay {$a}';
