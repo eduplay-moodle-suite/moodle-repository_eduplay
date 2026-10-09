@@ -31,7 +31,6 @@ require_once($CFG->dirroot . '/repository/lib.php');
 
 use local_eduplay\local\api_client;
 use local_eduplay\local\url_parser;
-use local_eduplay\local\video_info;
 use local_eduplay\local\video_reference;
 
 /**
@@ -91,19 +90,7 @@ class repository_eduplay extends repository {
         if (!api_client::is_enabled()) {
             return $this->response([], 'searchhintpasted');
         }
-
-        try {
-            $result = (new api_client())->search($searchtext, $page);
-        } catch (\moodle_exception $e) {
-            return $this->response([], 'searcherror');
-        }
-        $items = array_map(fn(video_info $video): array => $this->item($video->name, $video->reference(), $video->thumbnail),
-            $result->videos);
-        $response = $this->response($items, $items ? null : 'noresults');
-        $response['page'] = $result->page;
-        $response['pages'] = $result->lastpage;
-        $response['dynload'] = true;
-        return $response;
+        return $this->title_search($searchtext, $page);
     }
 
     /**
@@ -131,6 +118,30 @@ class repository_eduplay extends repository {
      */
     public function global_search() {
         return false;
+    }
+
+    /**
+     * Search EduPlay videos by title.
+     *
+     * @param string $searchtext Text to search.
+     * @param int $page Page, starting at 1.
+     * @return array
+     */
+    private function title_search(string $searchtext, int $page): array {
+        try {
+            $result = (new api_client())->search($searchtext, $page);
+        } catch (\moodle_exception $e) {
+            return $this->response([], 'searcherror');
+        }
+        $items = [];
+        foreach ($result->videos as $video) {
+            $items[] = $this->item($video->name, $video->reference(), $video->thumbnail);
+        }
+        $response = $this->response($items, $items ? null : 'noresults');
+        $response['page'] = $result->page;
+        $response['pages'] = $result->lastpage;
+        $response['dynload'] = true;
+        return $response;
     }
 
     /**
