@@ -20,7 +20,7 @@ Versão em português: `Português (Brasil) <../pt-br/index.html>`_.
 Scope of the proof of concept
 -----------------------------
 
-* **No catalogue browsing**: EduPlay has no documented public listing or search API, so the repository cannot list videos. Browsing and keyword search depend on an official API and authorization from RNP.
+* **No catalogue browsing**: EduPlay has no officially confirmed listing or search API, so the repository cannot list videos. Browsing and keyword search depend on an official API and authorization from RNP.
 * **Link only**: the repository returns the canonical link (``FILE_EXTERNAL``); no media is copied to Moodle.
 * **Validated**: only links accepted by ``local_eduplay`` are returned.
 * **Moodle 4.5 LTS and 5.3 LTS**.

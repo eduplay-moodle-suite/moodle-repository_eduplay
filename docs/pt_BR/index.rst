@@ -20,7 +20,7 @@ English version: `English <../en/index.html>`_.
 Escopo da prova de conceito
 ---------------------------
 
-* **Sem navegação no catálogo**: o EduPlay não tem API pública documentada de listagem ou busca, então o repositório não consegue listar vídeos. Navegação e busca por palavra-chave dependem de API oficial e de autorização da RNP.
+* **Sem navegação no catálogo**: o EduPlay não tem API oficial de listagem ou busca confirmada, então o repositório não consegue listar vídeos. Navegação e busca por palavra-chave dependem de API oficial e de autorização da RNP.
 * **Somente link**: o repositório devolve o link canônico (``FILE_EXTERNAL``); nenhuma mídia é copiada para o Moodle.
 * **Validado**: só links aceitos pelo ``local_eduplay`` são devolvidos.
 * **Moodle 4.5 LTS e 5.3 LTS**.

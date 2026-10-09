@@ -17,7 +17,7 @@
 /**
  * EduPlay repository: lets the user add a link to an EduPlay video from the file picker.
  *
- * Proof of concept. EduPlay has no documented public listing or search API, so the repository does not browse
+ * Proof of concept. EduPlay has no officially confirmed listing or search API, so the repository does not browse
  * the catalogue: the user pastes a canonical video link in the search box and gets an external link back
  * (never a copy of the media).
  *
