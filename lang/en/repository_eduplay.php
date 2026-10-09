@@ -26,7 +26,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'EduPlay repository configuration';
 $string['eduplay:view'] = 'View the EduPlay repository';
+$string['noresults'] = 'No public EduPlay video was found.';
 $string['pluginname'] = 'EduPlay';
-$string['privacy:metadata'] = 'The EduPlay repository plugin does not store any personal data and sends nothing to EduPlay.';
-$string['searchhint'] = 'Paste the full video link (https://eduplay.rnp.br/app/video/number) in the search box. Search by title is not available.';
+$string['privacy:metadata:eduplay'] = 'To search videos, the server sends the search text to the EduPlay service (eduplay.rnp.br). No user identifier is sent.';
+$string['privacy:metadata:eduplay:searchterm'] = 'The text typed by the user in the video search.';
+$string['searcherror'] = 'The EduPlay service could not be queried now. Try again later or paste the full video link.';
+$string['searchhint'] = 'Type words from the video title in the search box, or paste the full video link (https://eduplay.rnp.br/app/video/number).';
+$string['searchhintpasted'] = 'Paste the full video link (https://eduplay.rnp.br/app/video/number) in the search box. Search by title is disabled by the site administrator.';
 $string['videotitle'] = 'EduPlay video {$a}';
