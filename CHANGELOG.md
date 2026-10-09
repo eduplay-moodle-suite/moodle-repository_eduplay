@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0 - 2026-10-09
+
+- Maturity raised from ALPHA to BETA.
+
 ## 0.2.0 - 2026-10-09
 
 - Search EduPlay videos by title with paging (10 per page), showing title and thumbnail, through the API client of local_eduplay 0.3.0. Only public, active videos that do not require authentication are listed.

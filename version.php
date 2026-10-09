@@ -25,10 +25,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'repository_eduplay';
-$plugin->version = 2026100901;
+$plugin->version = 2026100902;
 $plugin->requires = 2024100700; // Moodle 4.5.
-$plugin->maturity = MATURITY_ALPHA;
-$plugin->release = '0.2.0';
+$plugin->maturity = MATURITY_BETA;
+$plugin->release = '0.3.0';
 $plugin->dependencies = [
     'local_eduplay' => 2026100901,
 ];
