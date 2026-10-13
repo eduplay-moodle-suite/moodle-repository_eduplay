@@ -20,6 +20,13 @@ Repositório do seletor de arquivos da [EduPlay Moodle Suite](https://github.com
 
 Instale este repositório em `repository/eduplay` (prefixo `public/` no Moodle 5.1+), acesse *Administração do site > Notificações* e habilite-o em *Gerenciar repositórios*.
 
+## Support, external service and privacy / Suporte, serviço externo e privacidade
+
+- Issue tracker / Rastreador de issues: <https://github.com/eduplay-moodle-suite/moodle-repository_eduplay/issues>
+- Documentation / Documentação: <https://eduplay-moodle-suite.github.io/moodle-repository_eduplay/>
+- External service / Serviço externo: [EduPlay](https://eduplay.rnp.br/) (public videos; no account, API key or payment required / vídeos públicos; sem conta, chave de API ou pagamento). See the Privacy API metadata of this plugin / Veja os metadados da Privacy API deste plugin.
+- Translations / Traduções: only English is shipped; other languages go through AMOS / o pacote traz só inglês; outros idiomas via AMOS.
+
 ## License / Licença
 
 GNU GPL v3 or later. See [LICENSE](LICENSE).
