@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 - 2026-10-13
+
+- Marketplace guidelines audit: removed `lang/pt_br` from the package (only English is shipped; translations go through AMOS).
+- README: issue tracker, documentation, external service and privacy.
+
 ## 0.3.0 - 2026-10-09
 
 - Maturity raised from ALPHA to BETA.
